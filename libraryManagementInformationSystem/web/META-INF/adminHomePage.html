@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management Information System - Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="adminHomePage.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome to the Library Management Information System!</h2>
+    <div class="dashboard">
+      <h3>Dashboard</h3>
+      <ul>
+        <li><a href="addBook.html">Add Book</a></li> Leads to form
+        <li><a href="viewBook.html">View Book</a></li> Leads to brief table, brief table leads to detailed table.
+        <li><a href="updateBook.html">Update Book</a></li> Leads to brief table, brief table leads to "add book" format table with details.
+        <li><a href="issueBook.html">Issue Book</a></li> Leads to form, redirects to issued books
+        <li><a href="issuedBooks.html">Issued Books</a></li> Displays Table with Book details, no borrower details.
+        <li><a href="returnedBooks.html">Returned Books</a></li> We make use of where="Returned". Display Name, Surname, Book title, return date and comment.
+        <li><a href="outstandingBooks.html">Outstanding Books</a></li> We display all books outstanding; Book Title, Return Date, Name and surname with option to view borrower details
+      </ul>
+      <form action="logoutServlet" method="POST">
+        <button type="submit">Logout</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

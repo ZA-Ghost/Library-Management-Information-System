@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Management Information System - Add Book</title>
+  <link rel="stylesheet" type="text/css" href="addBook.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add Book</h2>
+    <form action="addBookServlet" method="POST">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+      </div>
+      <div class="form-group">
+        <label for="publisher">Publisher:</label>
+        <input type="text" id="publisher" name="publisher" required>
+      </div>
+      <div class="form-group">
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" name="isbn" required>
+      </div>
+	  <div class="form-group">
+        <label for="edition">Edition:</label>
+        <input type="text" id="edition" name="edition" required>
+      </div>
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Add Book</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
